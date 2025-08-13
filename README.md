@@ -132,8 +132,8 @@ Running without a GPU may be slower.
 
 The script overwrites old output files if run multiple times.
 
-demo video
-(https://github.com/priyanka2001240/Traffic-Flow-Analysis-Task/blob/main/video_traffic_Analysis.mp4)
+
+![Watch the video](https://github.com/priyanka2001240/Traffic-Flow-Analysis-Task/blob/main/video_traffic_Analysis.mp4)
 
 Works best with a fixed camera and clear lane markings.
 
