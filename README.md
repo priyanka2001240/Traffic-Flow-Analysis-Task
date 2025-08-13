@@ -136,6 +136,6 @@ The script overwrites old output files if run multiple times.
 Works best with a fixed camera and clear lane markings.
 
 The lane boundaries in this script are vertical lines; for curved roads, use polygon-based lane detection.
-![Watch the video](https://github.com/priyanka2001240/Traffic-Flow-Analysis-Task/blob/main/video_traffic_Analysis.mp4)
+![Watch the video](https://drive.google.com/file/d/1etSS3LaSZYAYcgjrWV9pWUlsrI3MPSQJ/view?usp=sharing)
 
 
