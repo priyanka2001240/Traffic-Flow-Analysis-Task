@@ -1,7 +1,9 @@
 # Traffic-Flow-Analysis-Task
 
 Traffic Flow Analysis – Detailed Setup & Execution
+
 1. Requirements
+   
 Python: Version 3.8 or later
 
 Operating System: Windows
@@ -118,7 +120,6 @@ Adjust values to fit your video.
 Change Vehicle Classes:
 In detection loop:
 
-
 if cls in [2, 3, 5, 7]:
 (COCO IDs: car=2, motorcycle=3, bus=5, truck=7)
 
@@ -133,11 +134,10 @@ Running without a GPU may be slower.
 
 The script overwrites old output files if run multiple times.
 
-
 Works best with a fixed camera and clear lane markings.
 
 The lane boundaries in this script are vertical lines; for curved roads, use polygon-based lane detection.
 
-[Watch the  demo video](https://drive.google.com/file/d/18dYEsztBNV4hz5f48KZPKQWbC_uHHs85/view?usp=sharing)
+[Watch the demo video](https://drive.google.com/file/d/18dYEsztBNV4hz5f48KZPKQWbC_uHHs85/view?usp=sharing)
 
 
