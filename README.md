@@ -42,9 +42,10 @@ python traffic_flow_analysis.py
 
 
 5. What the Script Does
-   1.Downloads the YouTube traffic video (traffic.mp4).
+   
+   5.1.Downloads the YouTube traffic video (traffic.mp4).
 
-   2.Loads YOLOv8 (yolov8n.pt) to detect vehicles:
+   5.2.Loads YOLOv8 (yolov8n.pt) to detect vehicles:
 
    Car (COCO ID: 2)
 
@@ -54,9 +55,9 @@ python traffic_flow_analysis.py
 
    Truck (7)
 
-   3.Implements SORT tracking to maintain unique IDs for vehicles across frames.
+   5.3.Implements SORT tracking to maintain unique IDs for vehicles across frames.
 
-   4.Defines lane boundaries at pixel positions:
+   5.4.Defines lane boundaries at pixel positions:
 
 
    lanes_x = [300, 600, 900]
@@ -68,26 +69,26 @@ python traffic_flow_analysis.py
 
    Lane 3: x ≥ 600
 
-   5.Counts vehicles per lane only once per vehicle ID to avoid duplicates.
+   5.5.Counts vehicles per lane only once per vehicle ID to avoid duplicates.
 
-   6.Overlays on video:
+   5.6.Overlays on video:
 
-  Lane boundary lines (yellow)
+   Lane boundary lines (yellow)
 
-  Vehicle bounding boxes (blue)
+   Vehicle bounding boxes (blue)
 
-  Vehicle ID + lane number (green text)
+   Vehicle ID + lane number (green text)
 
-  Real-time lane counts (yellow text at top-left)
+   Real-time lane counts (yellow text at top-left)
 
-   7.Saves outputs:
+   5.7.Saves outputs:
 
-  processed_traffic.mp4 → Annotated video with overlays
+   processed_traffic.mp4 → Annotated video with overlays
 
-  traffic_analysis.csv → Vehicle log with:
+   traffic_analysis.csv → Vehicle log with:
 
    Vehicle_ID, Lane, Frame, Timestamp
-Console summary showing total counts per lane
+   Console summary showing total counts per lane
 
 6. Output Files
 After execution, you will have:
@@ -136,6 +137,7 @@ The script overwrites old output files if run multiple times.
 Works best with a fixed camera and clear lane markings.
 
 The lane boundaries in this script are vertical lines; for curved roads, use polygon-based lane detection.
+
 [Watch the  demo video](https://drive.google.com/file/d/18dYEsztBNV4hz5f48KZPKQWbC_uHHs85/view?usp=sharing)
 
 
